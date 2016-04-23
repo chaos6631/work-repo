@@ -1,2 +1,36 @@
-body {
-  width: 85.71429%; }
+footer{	 
+	height: 100px;
+	background: #101010;
+	color: gray;
+}
+
+/****************************************
+			Bootstrap Adjustments
+****************************************/
+.container-fluid{ padding-left: 0px; padding-right: 0px;  }
+
+/****************************************
+			Custom Box Classes
+****************************************/
+.page{ padding-left: 0px; padding-right: 0px; }
+.content-box-full{ max-height: 750px; padding-left: 0px; padding-right: 0px; }
+.content-box-medium{ height: 450px; padding-left: 0px; padding-right: 0px; }
+.content-box-small{ height: 250px; padding-left: 0px; padding-right: 0px; }
+.content-box-gallery{ height: 400px; padding-left: 0px; padding-right: 0px; }
+.padding-heavy{ padding-top: 100px; padding-left: 200px; padding-right: 200px; padding-bottom: 100px;}
+.padding-medium{ padding-top: 50px; padding-left: 100px; padding-right: 100px; padding-bottom: 50px;}
+.slider{}
+/****************************************
+			Custom Text Classes
+****************************************/
+.text-huge{ font-size: 45px; }
+.text-large{ font-size: 35px; }
+.text-small{ font-size: 15px; }
+/****************************************
+			Custom IDs
+****************************************/
+#home-text-slider{	
+	color: #fff;
+	background: #101010;
+	font-size: 25px;
+}

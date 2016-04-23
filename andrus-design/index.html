@@ -7,8 +7,11 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Andrus Design</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Styles -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="styles/css/main.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,15 +20,19 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body ng-app="app">
+    <!-- App Container -->
     <div class="container-fluid">
-      <div ng-view></div>
+      <header ng-include="'templates/nav.html'"></header>
+      <div class="col-xs-12 page" ng-include="'templates/home.html'" ui-view></div>
+      <!-- <footer ng-include="'templates/footer.html'"></footer> -->
     </div>
 
-
+    <!-- Scripts -->
     <!-- build:js scripts/vendor.js -->    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="node_modules/angular/angular.js"></script>
+    <!-- <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script> -->
     <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
 
 
