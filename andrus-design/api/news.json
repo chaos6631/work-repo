@@ -1,32 +1,40 @@
 [{
   "id": 1,
-  "title": "Abata",
-  "category": "true",
+  "title": "Big Win!!",
+  "category": "Developer News",
   "content": "Lorem Ipsum",
-  "image_ref": "true",
+  "image_ref": "images/news1.jpg",
   "date_added": "6/27/2014"
 },
 {
   "id": 2,
-  "title": "Abata",
-  "category": "true",
+  "title": "Bootstrap",
+  "category": "Studio News",
   "content": "Lorem Ipsum",
-  "image_ref": "true",
+  "image_ref": "images/news2.jpg",
   "date_added": "6/27/2014"
 },
 {
   "id": 3,
-  "title": "Abata",
-  "category": "true",
+  "title": "REACT Framework",
+  "category": "Studio News",
   "content": "Lorem Ipsum",
-  "image_ref": "true",
+  "image_ref": "images/news3.jpg",
   "date_added": "6/27/2014"
 },
 {
   "id": 4,
-  "title": "Abata",
-  "category": "true",
+  "title": "AngularJS",
+  "category": "Developer News",
   "content": "Lorem Ipsum",
-  "image_ref": "true",
+  "image_ref": "images/news4.jpg",
+  "date_added": "6/27/2014"
+},
+{
+  "id": 5,
+  "title": "Abata",
+  "category": "Studio News",
+  "content": "Lorem Ipsum",
+  "image_ref": "images/news5.jpg",
   "date_added": "6/27/2014"
 }]

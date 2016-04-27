@@ -1,37 +1,37 @@
 [{
   "id": 1,
   "name": "Abata",
-  "type": true,
-  "image_ref": true,
+  "type": "print",
+  "image_ref": "images/1.jpg",
   "date_added": "6/27/2014"
 }, {
   "id": 2,
   "name": "Feedbug",
-  "type": false,
-  "image_ref": false,
+  "type": "design",
+  "image_ref": "images/2.jpg",
   "date_added": "12/27/2014"
 }, {
   "id": 3,
   "name": "Rhynoodle",
-  "type": true,
-  "image_ref": true,
+  "type": "print",
+  "image_ref": "images/3.jpg",
   "date_added": "5/18/2014"
 }, {
   "id": 4,
   "name": "Muxo",
-  "type": true,
-  "image_ref": false,
+  "type": "design",
+  "image_ref": "images/4.jpg",
   "date_added": "12/18/2015"
 }, {
   "id": 5,
   "name": "Yadel",
-  "type": false,
-  "image_ref": false,
+  "type": "music",
+  "image_ref": "images/2.jpg",
   "date_added": "5/25/2015"
 }, {
   "id": 6,
   "name": "Topicware",
-  "type": true,
-  "image_ref": true,
+  "type": "design",
+  "image_ref": "images/3.jpg",
   "date_added": "3/2/2016"
 }]

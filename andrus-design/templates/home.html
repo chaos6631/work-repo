@@ -1,6 +1,33 @@
-<div class="col-xs-12 content-box-full">
-	<!-- slideshow of latest news -->
-	<img class="box-background" src="images/home2.jpeg" alt="Title image"/>
+<!-- slideshow of latest news -->
+<!-- <div class="col-xs-12 content-box-full"> 	
+	<img id="home-image1" class="box-background hidden" src="images/home2.jpeg" alt="Title image"/>
+	<img id="home-image2" class="box-background" src="images/home1.jpg" alt="Title image"/>
+	<img id="home-image3" class="box-background hidden" src="images/home3.jpg" alt="Title image"/>
+</div> -->
+
+
+<div id="carousel-home" class="carousel slide carousel-fade" data-ride="carousel" data-interval="7000" ng-controller="">  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img id="home-image1" class="" src="images/home2.jpeg" alt="Title image"/>
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+    <div class="item">
+      <img id="home-image2" class="" src="images/home1.jpg" alt="Title image"/>
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+    <div class="item">
+      <img id="home-image3" class="" src="images/home3.jpg" alt="Title image"/>
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+  </div>  
 </div>
 <div class="col-xs-12 content-box-medium" id="home-text-slider">
 	<!-- slideshow of content -->
@@ -12,3 +39,4 @@
 	<div class="col-xs-3 box-counter text-right" style="border: 1px solid white;"><p><span class="link-regular">1/3</span></p></div>
 
 </div>
+

@@ -20,3 +20,10 @@ $(document).on('click','.navbar-collapse.in',function(e) {
       $(this).collapse('hide');
   }
 });
+
+/****************************************
+			Cycle Images
+****************************************/
+$('.carousel').carousel({
+	interval: 10000,	
+});

@@ -1,32 +1,7 @@
-<div class="col-xs-12 content-box-gallery" id="projects">
-	<div class="col-xs-12 col-sm-5 content-box-gallery">
-		<img class="img-responsive" src="images/proj_1.jpg" />
-		<h3>Article</h3>
-		<h6>Category</h6>
-	</div>
-	<div class="col-xs-12 col-sm-5 content-box-gallery">
-		<img class="img-responsive" src="images/proj_2.jpg" />
-		<h3>Article</h3>
-		<h6>Category</h6>
-	</div>
-	<div class="col-xs-12 col-sm-5 content-box-gallery">
-		<img class="img-responsive" src="images/proj_3.jpg" />
-		<h3>Article</h3>
-		<h6>Category</h6>
-	</div>
-	<div class="col-xs-12 col-sm-5 content-box-gallery">
-		<img class="img-responsive" src="images/proj_4.jpg" />
-		<h3>Article</h3>
-		<h6>Category</h6>
-	</div>
-	<div class="col-xs-12 col-sm-5 content-box-gallery">
-		<img class="img-responsive" src="images/proj_5.jpg" />
-		<h3>Article</h3>
-		<h6>Category</h6>
-	</div>
-	<div class="col-xs-12 col-sm-5 content-box-gallery">
-		<img class="img-responsive" src="images/proj_6.jpg" />
-		<h3>Article</h3>
-		<h6>Category</h6>
-	</div>
+<div class="col-xs-12 content-box-gallery" id="projects" ng-controller="newsController">
+	<div class="col-xs-12 col-sm-5 content-box-gallery" ng-repeat="article in news">
+		<img class="img-responsive" src="{{article.image_ref}}" />
+		<h3>{{article.title}}</h3>
+		<h6>{{article.category}}</h6>
+	</div>	
 </div>

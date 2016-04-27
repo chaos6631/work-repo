@@ -54,6 +54,11 @@ footer{
 	padding-top: 275px;
 	padding-left: 80px;
 }
+#contact-title-image{ max-height: 650px; max-width: 1920px; margin: 0 auto; overflow: hidden; }
+#contact-title-image img { min-height: 650px; min-width: 1620px; margin-top: -40px; z-index: 0;}
+@media only screen and (max-width: 768px){
+	#contact-title-image img{ margin-left: -660px; }
+}
 #home-text-slider{ color: #fff;	background: #101010; }
 #home-text-slider .content-box-text{ margin-top: 100px; }
 #menu {

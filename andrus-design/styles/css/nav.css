@@ -53,5 +53,6 @@
 
 .modal-nav-brand{ position: absolute; top: 50px; left: 50px; }
 .modal-nav-links{ position: absolute; top: 80px; right: 50px; margin-top: 15px;}
+.navbar-header button{ background: rgba(16, 16, 16, .1); }
 
 /*End block for full screen NAV modal*/
