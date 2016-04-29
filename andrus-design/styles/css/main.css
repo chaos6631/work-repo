@@ -35,7 +35,8 @@ footer{
 .content-box-full{ min-height: 650px; max-height: 750px; padding-left: 0px; padding-right: 0px; overflow: hidden; text-align: center; }
 .content-box-medium{ min-height: 475px; padding-left: 30px; padding-right: 30px; }
 .content-box-small{ min-height: 250px; padding-left: 40px; padding-right: 0px; padding-top: 35px; }
-.content-box-gallery{ min-height: 400px; padding-left: 0px; padding-right: 0px; margin-top: 35px; }
+.content-box-gallery{ padding-left: 0px; padding-right: 0px; padding-top: 125px; }
+.content-box-gallery-item{ min-height: 450px; padding-left: 10%; margin-top: 35px; }
 .content-box-text{ padding-left: 10%; padding-right: 10%; padding-top: 100px; padding-bottom: 75px;}
 .padding-heavy{ padding-top: 100px; padding-left: 15%; padding-right: 15%; }
 .padding-medium{ padding-top: 50px; padding-left: 8%; padding-right: 8%; padding-bottom: 50px;}

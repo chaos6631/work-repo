@@ -3,7 +3,7 @@
   "title": "Big Win!!",
   "category": "Developer News",
   "content": "Lorem Ipsum",
-  "image_ref": "images/news1.jpg",
+  "image_ref": "./images/proj_1.png",
   "date_added": "6/27/2014"
 },
 {
@@ -11,7 +11,7 @@
   "title": "Bootstrap",
   "category": "Studio News",
   "content": "Lorem Ipsum",
-  "image_ref": "images/news2.jpg",
+  "image_ref": "./images/proj_2.png",
   "date_added": "6/27/2014"
 },
 {
@@ -19,7 +19,7 @@
   "title": "REACT Framework",
   "category": "Studio News",
   "content": "Lorem Ipsum",
-  "image_ref": "images/news3.jpg",
+  "image_ref": "./images/proj_3.png",
   "date_added": "6/27/2014"
 },
 {
@@ -27,7 +27,7 @@
   "title": "AngularJS",
   "category": "Developer News",
   "content": "Lorem Ipsum",
-  "image_ref": "images/news4.jpg",
+  "image_ref": "./images/proj_6.png",
   "date_added": "6/27/2014"
 },
 {
@@ -35,6 +35,6 @@
   "title": "Abata",
   "category": "Studio News",
   "content": "Lorem Ipsum",
-  "image_ref": "images/news5.jpg",
+  "image_ref": "./images/proj_5.png",
   "date_added": "6/27/2014"
 }]

@@ -1,3 +1,12 @@
+.scroll-animate{ opacity: 0; }
+.scroll-animate.in-view{
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
 .view-frame.ng-enter {
   -webkit-animation: 2.5s fade-in;
   -moz-animation: 2.5s fade-in;
@@ -46,22 +55,18 @@
 
 /* don't forget about the vendor-prefixes! */
 
-/***************************************
-      Image Cycler with fade and centered image
-***************************************/
-/*********Centered Image************/
-#carousel-home { max-height: 650px; max-width: 1920px; margin: 0 auto; overflow: hidden;}
-#carousel-home .carousel-inner { 
-  position: relative; 
-  width: 1920px;
-  left: 50%;
-  margin-left: -960px;
-  margin-top: -51px;
-  z-index: 0;
-}
-#carousel-home img { min-height: 650px; } /*NEED TO ADD IMAGE ADJUSTMENTS TO ALLOW WIDTH OVERFLOW AND CENTER THE IMAGE*/
+/******************************************************
+      Image Carousel with fade and centered image
+******************************************************/
 
-/******Fade Section*******/
+      /*********Centered Image************/
+#carousel-home { max-height: 100vh; max-width: 1920px; margin: 0 auto; overflow: hidden;}
+#carousel-home .carousel-inner { }
+#carousel-home .item-image{ position: relative; width: 1500px; left: 50%; margin-left: -760px; z-index: 0; }
+#carousel-home .item-image img { max-height: 100vh; } /*NEED TO ADD media queries to adjust min heights on smaller screens*/
+
+
+      /******Fade Section*******/
 
 .carousel-fade .carousel-inner .item {
   opacity: 0;

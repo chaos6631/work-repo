@@ -1,5 +1,5 @@
 // Create the module and name it app
-var app = angular.module('app', ['ngRoute', 'appAnimations']);
+var app = angular.module('app', ['ngRoute', 'appAnimations', 'angular-scroll-animate']);
 
 
 app.config(['$routeProvider', 
@@ -19,8 +19,8 @@ app.config(['$routeProvider',
 					controller: "contactController"
 				}).
 				when('/news', {					
-					templateUrl: "templates/news.html",
-					controller: "newsController"
+					controller: "newsController",
+					templateUrl: "templates/news.html"
 				}).
 				when('/projects', {					
 					templateUrl: "templates/projects.html",
@@ -30,7 +30,7 @@ app.config(['$routeProvider',
 					templateUrl: "templates/team.html",
 					controller: "teamController"
 				});
-	}]);
+}]);
 
 /************************
 	Controllers
@@ -52,6 +52,18 @@ app.controller('newsController', ['$scope', '$http', function($scope, $http){
 	$http.get('api/news.json').success(function(data){
 		$scope.news = data;
 	});
+
+	$('#news:first-child').removeClass('invisible');
+
+	$scope.animateElementIn = function($el){
+		$el.removeClass('invisible');
+		$el.addClass('animated fadeIn'); //uses animate.css
+	};
+
+	$scope.animateElementOut = function ($el) {
+		$el.removeClass('fadeInUp');
+		$el.addClass('animated fadeIn');
+	};
 }]);
 
 app.controller('projectsController', ['$scope', '$http', function($scope, $http){
