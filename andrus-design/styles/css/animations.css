@@ -58,13 +58,24 @@
 /******************************************************
       Image Carousel with fade and centered image
 ******************************************************/
-
+/* Image sizes for full frame images (height equals width/2.1512605042)
+  5k display = 5120x2880 actually 5120x2380
+  4k display = 3840x2160 actually 3840x1785
+  HD Display = 1920x1080 actually 1920x892
+*/
       /*********Centered Image************/
-#carousel-home { max-height: 100vh; max-width: 1920px; margin: 0 auto; overflow: hidden;}
-#carousel-home .carousel-inner { }
-#carousel-home .item-image{ position: relative; width: 1500px; left: 50%; margin-left: -760px; z-index: 0; }
-#carousel-home .item-image img { max-height: 100vh; } /*NEED TO ADD media queries to adjust min heights on smaller screens*/
-
+#carousel-home { min-height: 100vh; margin: 0 auto; overflow: hidden;}
+#carousel-home .item-image-container { position: relative; max-height: 100vh; } 
+/*#carousel-home .item-image-container{ position: relative; min-height: 100vh; width: 1500px; left: 50%; margin-left: -760px; z-index: 0; } /* works for images with specified width of 1300px*/
+.item-image-container > img { min-height: 100vh; max-height: 100vh; float: right;} /*float keeps right side of image anchored*/
+@media only screen and (max-width: 400px) {
+  /* For mobile: */
+  .item-image-container { margin-right: -40%; }
+}
+@media only screen and (max-width: 800px) {
+  /* For tablet: */
+  .item-image-container { margin-right: -30%; }
+}
 
       /******Fade Section*******/
 
