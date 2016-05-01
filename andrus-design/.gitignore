@@ -1,6 +1,9 @@
 # Folders #
 ###################
 node_modules/
+build/
+
+####################################### Git Ignore Template for optimal performance ##########################
 
 # Compiled source #
 ###################
