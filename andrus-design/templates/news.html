@@ -1,4 +1,4 @@
-<div class="col-xs-12 content-box-gallery" id="news" ng-controller="newsController">
+<div class="col-xs-12 content-box-gallery" id="news" ng-controller="NewsCtrl">
 	<div ng-repeat="article in news" class="col-xs-12 col-sm-5 content-box-gallery-item invisible" when-visible="animateElementIn">
 		<img class="img-responsive" src={{article.image_ref}} />
 		<h3>{{article.title}}</h3>

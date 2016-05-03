@@ -27,8 +27,8 @@
 .box-background{ position: relative; margin-left: -100%; left: 50%; width: auto !important; height: 750px !important; }
 .box-counter{ position: absolute; bottom: 5%; right: 8%; }
 .box-link{ position: absolute; bottom: 5%; left: 8%; }
-.content-box-full{ min-height: 650px; max-height: 750px; padding-left: 0px; padding-right: 0px; overflow: hidden; text-align: center; }
-.content-box-medium{ min-height: 475px; padding-left: 30px; padding-right: 30px; }
+.content-box-full{ min-height: 100vh; max-height: 100vh; padding-left: 0px; padding-right: 0px; overflow: hidden; text-align: center; }
+.content-box-medium{ min-height: 75vh; padding-left: 30px; padding-right: 30px; }
 .content-box-small{ min-height: 250px; padding-left: 40px; padding-right: 0px; padding-top: 35px; }
 .content-box-gallery{ padding-left: 0px; padding-right: 0px; padding-top: 125px; }
 .content-box-gallery-item{ min-height: 450px; padding-left: 10%; margin-top: 35px; }

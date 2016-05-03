@@ -1,6 +1,6 @@
-<div class="col-xs-12 content-box-gallery" id="projects" ng-controller="projectsController">
+<div class="col-xs-12 content-box-gallery" id="projects" ng-controller="ProjectsCtrl">
 	<div ng-repeat="project in projects" class="col-xs-12 col-sm-5 content-box-gallery-item" >
-		<img class="img-responsive" ng-src="{{project.image_ref}}" />
+		<a href="projects/{{project.id}}"><img class="img-responsive" ng-src="{{project.image_ref}}" /></a>
 		<h3>{{project.name}}</h3>
 		<h6>{{project.type}}</h6>
 	</div>	
