@@ -1,14 +1,16 @@
 // Create the module and name it app
+'use strict';
 var app = angular.module('app', [
 	'ngRoute', 
 	'appControllers',
 	'appAnimations', 
+	'angular-inview',
 	'angular-scroll-animate',	
 ]);
 
 
-app.config(['$routeProvider', 
-	function($routeProvider) {
+app.config(['$routeProvider', '$locationProvider', 
+	function($routeProvider, $locationProvider) {
 		$routeProvider.otherwise("/");
 			$routeProvider.				
 				when('/', {					
@@ -33,7 +35,7 @@ app.config(['$routeProvider',
 				}).
 				when('/projects/:projectId', {
 	        templateUrl: 'templates/project-detail.html',
-	        controller: 'ProjectDetailCtrl'
+	        controller: 'ProjectsCtrl'
 	      }).
 				when('/team', {					
 					templateUrl: "templates/team.html",
@@ -43,5 +45,7 @@ app.config(['$routeProvider',
 					templateUrl: "templates/home.html",
 					controller: "HomeCtrl"
 				});
+
+				// $locationProvider.html5Mode(true);
 }]);
 

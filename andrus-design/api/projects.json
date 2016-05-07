@@ -1,35 +1,35 @@
 [{
-  "id": 1,
+  "id": "reframe",
   "name": "Reframe Film Festival",
   "type": "Print",
   "image_ref": "images/projects/reframe.png",
   "date_added": "6/27/2014"
 }, {
-  "id": 2,
+  "id": "arts-week",
   "name": "Arts Week Peterborough",
   "type": "Design",
   "image_ref": "images/projects/artsweek.png",
   "date_added": "12/27/2014"
 }, {
-  "id": 3,
+  "id": "lucky-number-seven",
   "name": "Lucky Number 7",
   "type": "Print",
   "image_ref": "images/projects/joe-bike-wheel.jpg",
   "date_added": "5/18/2014"
 }, {
-  "id": 4,
+  "id": "lett",
   "name": "LETT Architecture",
   "type": "Design",
   "image_ref": "images/projects/lett.jpg",
   "date_added": "12/18/2015"
 }, {
-  "id": 5,
+  "id": "surf-mag",
   "name": "SURF Magazine",
   "type": "Magazine",
   "image_ref": "images/projects/surf.jpg",
   "date_added": "5/25/2015"
 }, {
-  "id": 6,
+  "id": "tmn-mag",
   "name": "TMN - Movie Entertainment",
   "type": "Magazine",
   "image_ref": "images/projects/tmn-me.jpg",

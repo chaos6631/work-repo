@@ -1,28 +1,30 @@
-var appControllers = angular.module('appControllers', []);
+'use strict';
+var appControllers = angular.module('appControllers', ['ngRoute']);
 
 /************************
 	Controllers
 ***************************/
 
-appControllers.controller('HomeCtrl', function($scope, $http){
-	
-});
+appControllers.controller('HomeCtrl', function($scope, $route, $routeParams, $location){
+	$scope.$route = $route;
+	$scope.$location = $location;
+	$scope.$routeParams = $routeParams;
+	$scope.control = "HomeCtrl";
+})
 
-appControllers.controller('AboutCtrl', function($scope){
+.controller('AboutCtrl', function($scope){
 	$scope.hello = "Hello I am Working!";
-});
+})
 
-appControllers.controller('ContactCtrl', function($scope){
+.controller('ContactCtrl', function($scope){
 	$scope.hello = "Hello I am Working!";
-});
+})
 
-appControllers.controller('NewsCtrl', ['$scope', '$http', function($scope, $http){
+.controller('NewsCtrl', ['$scope', '$http', function($scope, $http){
 	$http.get('api/news.json').success(function(data){
 		$scope.news = data;
 	});
-
-	$('#news:first-child').removeClass('invisible');
-
+	
 	$scope.animateElementIn = function($el){
 		$el.removeClass('invisible');
 		$el.addClass('animated fadeIn'); //uses animate.css
@@ -32,18 +34,23 @@ appControllers.controller('NewsCtrl', ['$scope', '$http', function($scope, $http
 		$el.removeClass('fadeInUp');
 		$el.addClass('animated fadeIn');
 	};
-}]);
+}])
 
-appControllers.controller('ProjectsCtrl', ['$scope', '$http', function($scope, $http){
+.controller('ProjectsCtrl', ['$scope', '$http', function($scope, $http){
+	
 	$http.get('api/projects.json').success(function(data){
 		$scope.projects = data;
+		$scope.control = "ProjectsCtrl";
 	});
-}]);
+}])
 
-appControllers.controller('ProjectDetailCtrl', ['$scope', '$routeParams', function($scope, $routeParams){
-	$scope.projectId = $routeParams.projectId; // not working correctly
-}]);
+.controller('ProjectDetailCtrl', ['$scope', '$routeParams', function($scope, $routeParams){
 
-appControllers.controller('TeamCtrl', function($scope){
+	$scope.control = "ProjectDetailCtrl";
+	$scope.project = $scope.projects[$routeParams.projectId]; // not working correctly
+	$scope.params = $routeParams;
+}])
+
+.controller('TeamCtrl', function($scope){
 	$scope.hello = "Hello I am Working!";
 });
