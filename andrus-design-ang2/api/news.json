@@ -1,0 +1,40 @@
+[{
+  "id": 1,
+  "title": "Big Win!!",
+  "category": "Developer News",
+  "content": "Lorem Ipsum",
+  "image_ref": "./images/proj_1.png",
+  "date_added": "6/27/2014"
+},
+{
+  "id": 2,
+  "title": "Bootstrap",
+  "category": "Studio News",
+  "content": "Lorem Ipsum",
+  "image_ref": "./images/proj_2.png",
+  "date_added": "6/27/2014"
+},
+{
+  "id": 3,
+  "title": "REACT Framework",
+  "category": "Studio News",
+  "content": "Lorem Ipsum",
+  "image_ref": "./images/proj_3.png",
+  "date_added": "6/27/2014"
+},
+{
+  "id": 4,
+  "title": "AngularJS",
+  "category": "Developer News",
+  "content": "Lorem Ipsum",
+  "image_ref": "./images/proj_6.png",
+  "date_added": "6/27/2014"
+},
+{
+  "id": 5,
+  "title": "Abata",
+  "category": "Studio News",
+  "content": "Lorem Ipsum",
+  "image_ref": "./images/proj_5.png",
+  "date_added": "6/27/2014"
+}]
